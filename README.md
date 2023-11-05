@@ -1,8 +1,16 @@
 [![Python package with Poetry](https://github.com/cmatKhan/isocomp/actions/workflows/python-package.yml/badge.svg)](https://github.com/cmatKhan/isocomp/actions/workflows/python-package.yml)
 
-# Isocomp: comparing high-quality IsoSeq3 isoforms between samples
+# IsoComp: Comparing isoform composition between cohorts using high-quality long-read RNA-seq
 
 ![ISOCOMP](https://i.ibb.co/vHLhrZq/Isocomp-logo1.png)
+
+## Table of contents
+1. [Contributors](#contributors)
+2. [Introduction](#introduction)
+3. [Aim](#aim)
+4. [Workflow](#workflow)
+5. [Running the pipeline](#running)
+6. [Methods](#methods)
 
 ## Contributors:
 - Yutong Qiu (Carnegie Mellon)
@@ -17,6 +25,8 @@
 - Trinh Tat (Houston Methodist Research Institute)
 - Sejal Modha (Theolytics Limited)
 - Jędrzej Kubica (University of Warsaw)
+
+### [Cite](CITATIONS.md)
 
 ## Introduction
 Transcriptomic profiling has gained traction over the past few decades, but its progress has been hindered by short-read sequencing, particularly in tasks such as inferring alternative splicing, allelic imbalance, and isoform variation due to read length and required assembly.
@@ -303,6 +313,7 @@ the docs and push the package to pypi on every push to `main`.
 
 ## Computational Resources / Operation
 
-## Citations
-[1] https://www.pacb.com/products-and-services/applications/rna-sequencing/
+On a 16 core cloud instance with three GTF files (replicates) from
+[Genome in a Bottle](https://www.nist.gov/programs-projects/genome-bottle) subject HG002, 
+`find_unique_isoforms` took ~15 minutes and ~3 to 5 GB of RAM
 
